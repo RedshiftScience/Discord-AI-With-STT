@@ -16,7 +16,7 @@ import speech_recognition as sr #TODO Replace with something simpler
 
 #Outside of class so it doesn't load everytime the bot joins a discord call
 #Models are: "base.en" "small.en" "medium.en" "large-v2"
-audio_model = WhisperModel("medium.en", device="cuda", compute_type="int8_float16")
+audio_model = WhisperModel("small.en", device="cuda", compute_type="int8_float16")
 
 excluded_phrases = [
     "",
